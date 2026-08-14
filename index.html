@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación Natalia y Luis</title>
+
+<title>Natalia y Luis</title>
 
 <style>
+
 body{
     margin:0;
     padding:20px;
@@ -14,13 +16,12 @@ body{
 
 .book{
     display:flex;
-    max-width:1600px;
-    margin:auto;
+    justify-content:center;
+    align-items:flex-start;
 }
 
 .page{
     width:50%;
-    position:relative;
 }
 
 .page img{
@@ -28,29 +29,18 @@ body{
     display:block;
 }
 
-.spine{
-    width:20px;
-    background:#b58a4a;
+@media(max-width:900px){
+    .book{
+        flex-direction:column;
+    }
+
+    .page{
+        width:100%;
+    }
 }
 
-.link-rsvp{
-    position:absolute;
-    bottom:80px;
-    left:50%;
-    transform:translateX(-50%);
-    width:250px;
-    height:60px;
-}
-
-.link-map{
-    position:absolute;
-    bottom:80px;
-    left:50%;
-    transform:translateX(-50%);
-    width:250px;
-    height:60px;
-}
 </style>
+
 </head>
 
 <body>
@@ -58,20 +48,14 @@ body{
 <div class="book">
 
     <div class="page">
-        <img src="1.png" alt="Invitación">
-
-        ://forms.gle/zHebV14ErA47GQnx8"
-           target="_blank">
+        <a href="https://forms.gle/zHebV14ErA47GQnx8" target="_blank">
+            <img src="1.png" alt="Confirmar Asistencia">
         </a>
     </div>
 
-    <div class="spine"></div>
-
     <div class="page">
-        2.pngUbicación">
-
-        ://maps.app.goo.gl/oACd8njFiKR9by5h7"
-           target="_blank">
+        <a href="https://maps.app.goo.gl/oACd8njFiKR9by5h7" target="_blank">
+            2.png
         </a>
     </div>
 
